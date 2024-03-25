@@ -24,11 +24,24 @@ void input() {
 
     for (int i = 0; i < n; i++) {
         cout << "data ke-" << (i + 1) << ": ";
-        cin >> arr[i];
+        cin >> haikal[i];
 
     }
 
 }
+void SelectionSortArray() { //procedur untuk mengurutkan array dengan metode selection sort
+
+    void ucp() {
+        for (int j = 0; j < n - 1; j++) { //step 1
+            int min_index = j; //step 2a
+            for (int i = j + 1; i < n - 1; i++) { //step 2b
+                if (haikal[i] < haikal[min_index]) { //step 2c
+                    min_index = i; //step 2ci
+                }
+            }
+            swap(haikal[j], haikal[min_index]); //step 3
+        }
+
 int main()
 {
     
