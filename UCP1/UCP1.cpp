@@ -8,7 +8,7 @@ int n;
 
 void input() {
     while (true) {
-        cout << "masukan banyaknya elemen pada array : ";
+        cout << "masukan banyaknya elemen pada haikal : ";
         cin >> n;
         if (n <= 42)
             break;
